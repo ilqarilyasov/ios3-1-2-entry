@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TableViewController.swift
 //  Sprint-1-2-UITVC
 //
 //  Created by Ilgar Ilyasov on 10/13/18.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TableViewController: UITableViewController {
+    
+    let cellIdentifier = "TableCell"
+    let addSegue = "AddButtonShowSegue"
+    let cellSegue = "CellShowSegue"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
 

@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		823131B5217240A50025E7C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823131B4217240A50025E7C9 /* AppDelegate.swift */; };
-		823131B7217240A50025E7C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823131B6217240A50025E7C9 /* ViewController.swift */; };
+		823131B7217240A50025E7C9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823131B6217240A50025E7C9 /* TableViewController.swift */; };
 		823131BA217240A50025E7C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823131B8217240A50025E7C9 /* Main.storyboard */; };
 		823131BC217240A70025E7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823131BB217240A70025E7C9 /* Assets.xcassets */; };
 		823131BF217240A70025E7C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823131BD217240A70025E7C9 /* LaunchScreen.storyboard */; };
+		823131C8217242DD0025E7C9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823131C7217242DD0025E7C9 /* Model.swift */; };
+		823131CA217242E90025E7C9 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823131C9217242E90025E7C9 /* Entry.swift */; };
+		823131CD217242FF0025E7C9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823131CC217242FF0025E7C9 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		823131B1217240A50025E7C9 /* Sprint-1-2-UITVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sprint-1-2-UITVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		823131B4217240A50025E7C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		823131B6217240A50025E7C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		823131B6217240A50025E7C9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		823131B9217240A50025E7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		823131BB217240A70025E7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		823131BE217240A70025E7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		823131C0217240A70025E7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		823131C7217242DD0025E7C9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		823131C9217242E90025E7C9 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		823131CC217242FF0025E7C9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		823131B3217240A50025E7C9 /* Sprint-1-2-UITVC */ = {
 			isa = PBXGroup;
 			children = (
-				823131B4217240A50025E7C9 /* AppDelegate.swift */,
-				823131B6217240A50025E7C9 /* ViewController.swift */,
-				823131B8217240A50025E7C9 /* Main.storyboard */,
-				823131BB217240A70025E7C9 /* Assets.xcassets */,
-				823131BD217240A70025E7C9 /* LaunchScreen.storyboard */,
-				823131C0217240A70025E7C9 /* Info.plist */,
+				823131C7217242DD0025E7C9 /* Model.swift */,
+				823131C9217242E90025E7C9 /* Entry.swift */,
+				823131B6217240A50025E7C9 /* TableViewController.swift */,
+				823131CC217242FF0025E7C9 /* DetailViewController.swift */,
+				823131CB217242EF0025E7C9 /* Storyboard */,
+				823131C6217242D00025E7C9 /* Resources */,
 			);
 			path = "Sprint-1-2-UITVC";
+			sourceTree = "<group>";
+		};
+		823131C6217242D00025E7C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				823131B4217240A50025E7C9 /* AppDelegate.swift */,
+				823131BB217240A70025E7C9 /* Assets.xcassets */,
+				823131C0217240A70025E7C9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		823131CB217242EF0025E7C9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				823131B8217240A50025E7C9 /* Main.storyboard */,
+				823131BD217240A70025E7C9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				823131B7217240A50025E7C9 /* ViewController.swift in Sources */,
+				823131CD217242FF0025E7C9 /* DetailViewController.swift in Sources */,
+				823131CA217242E90025E7C9 /* Entry.swift in Sources */,
+				823131C8217242DD0025E7C9 /* Model.swift in Sources */,
+				823131B7217240A50025E7C9 /* TableViewController.swift in Sources */,
 				823131B5217240A50025E7C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
