@@ -10,4 +10,5 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    var indexPath: IndexPath? = nil
 }
