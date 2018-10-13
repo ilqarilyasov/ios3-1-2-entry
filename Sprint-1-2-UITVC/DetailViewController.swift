@@ -11,4 +11,8 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var indexPath: IndexPath? = nil
+    
+    @IBOutlet weak var field: UITextField!
+    @IBOutlet weak var textView: UITextView!
+    
 }
