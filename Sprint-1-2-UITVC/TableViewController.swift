@@ -50,12 +50,12 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailVC = segue.destination as? DetailViewController else { fatalError("Segue destination failed")}
         guard let identifier = segue.identifier else { fatalError("No segue identifier provided")}
-        guard let indexPath = tableView.indexPathForSelectedRow else { fatalError("Unable to retrieve selected index path")}
         
         switch identifier {
         case addSegueIdentifier:
             detailVC.indexPath = nil
         case cellSegueIdentifier:
+            guard let indexPath = tableView.indexPathForSelectedRow else { fatalError("Unable to retrieve selected index path")}
             detailVC.indexPath = indexPath
         default: // Because values are string and not enumaration we need a default case
             fatalError("Unknown segue identifier: \(identifier)")
